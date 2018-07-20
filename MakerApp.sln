@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakerApp", "MakerApp\MakerApp.csproj", "{7DF63D38-DA2F-45D2-9C67-D14C428C7744}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakerApp.Tests", "MakerApp.Tests\MakerApp.Tests.csproj", "{FBABC58D-4A80-4A31-BAB1-53D3C2371158}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7DF63D38-DA2F-45D2-9C67-D14C428C7744}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DF63D38-DA2F-45D2-9C67-D14C428C7744}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DF63D38-DA2F-45D2-9C67-D14C428C7744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBABC58D-4A80-4A31-BAB1-53D3C2371158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBABC58D-4A80-4A31-BAB1-53D3C2371158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBABC58D-4A80-4A31-BAB1-53D3C2371158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBABC58D-4A80-4A31-BAB1-53D3C2371158}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

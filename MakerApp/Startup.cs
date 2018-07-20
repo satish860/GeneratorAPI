@@ -15,6 +15,17 @@ namespace MakerApp
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvcCore()
+                .AddJsonFormatters()
+                .AddApiExplorer();
+            services.AddSwaggerGen((options) =>
+            {
+                options.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info
+                {
+                    Title="Fake Generator",
+                    Version="v1"
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -24,11 +35,13 @@ namespace MakerApp
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.Run(async (context) =>
+            app.UseSwagger();
+            app.UseSwaggerUI((options)=>
             {
-                await context.Response.WriteAsync("Hello World!");
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "My Api v1");
             });
+            app.UseMvc();
+            
         }
     }
 }
